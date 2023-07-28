@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function somaValor(num1, num2){
+    return num1 + num2
+}
+
+function subtraiValor(num1, num2){
+    return num1 - num2
+}
+
+function multiplicaValor(num1, num2){
+    return num1 * num2
+}
+
+function divideValor(num1, num2){
+    return num1 / num2
+}
+        
+let valorA = 0;
+let valorB = 0;
+let operador = 0;
+let soma = 0;
+let sub = 0;
+let mult = 0;
+let divisao = 0; 
+        
+valorA = parseInt(prompt("Digite o primeiro valor: "));
+valorB = parseInt(prompt("Digite o segundo valor: "));
+operador = prompt("Digite um valor: [1] Soma | [2] Subtração | [3] Multiplicação | [4] Divisão |");
+
+if(operador == "1"){
+    soma = somaValor(valorA, valorB);
+    alert("A soma entre " +valorA + " e " +valorB + " é igual a " +soma)
+} else if (operador == "2"){
+    sub = subtraiValor(valorA, valorB);
+    alert("A subtração entre " +valorA + " e " +valorB + " é igual a " +sub)
+} else if (operador == "3"){
+    mult = multiplicaValor(valorA, valorB);
+    alert("A multiplicação entre " +valorA + " e " +valorB + " é igual a " +mult)
+} else if (operador == "4"){
+    divisao = divideValor(valorA, valorB);
+    alert("A divisão entre " +valorA + " e " +valorB + " é igual a " +divisao)
+} else {
+    alert("0")
+}       
+    </script>
+</body>
+</html>
